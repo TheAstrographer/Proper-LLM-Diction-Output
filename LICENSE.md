@@ -28,14 +28,14 @@ The creator reserves the right to pursue additional actual damages, injunctive r
 ### 4. ATTRIBUTION REQUIREMENT
 Any public use, fork, derivative, paper, implementation, or demonstration must include prominent credit:
 
-"Based on the Active Variation Equations & Engine by [Your Name/Handle] — released for teaching and open knowledge under AVTL v1.0"
+"Based on the Active Variation Equations & Engine by [Joshua Christopher Ryan] — released for teaching and open knowledge under AVTL v1.0"
 
 ### 5. INTENT
 This work is meant for teaching and knowledge. It is not intended to be privatized, monetized in secret, or stripped of its origin. The high damages clause exists precisely to protect the spirit of open teaching against extractive enclosure.
 
 By using this work you agree to the terms above.
 
-For commercial or alternative licensing inquiries, contact: [your contact]
+For commercial or alternative licensing inquiries, contact: [theeastrophysicist@hotmail.com]
 
 ---
 
