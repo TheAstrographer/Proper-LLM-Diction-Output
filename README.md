@@ -10,4 +10,5 @@
 4. Rich, evocative word choices and metaphors in the code bank itself.
 
 5. Negative space functional variation meets stochastic processes and vector analysis.
+
 ===================================
