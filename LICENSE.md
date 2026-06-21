@@ -35,7 +35,7 @@ This work is meant for teaching and knowledge. It is not intended to be privatiz
 
 By using this work you agree to the terms above.
 
-For commercial or alternative licensing inquiries, contact: [theeastrophysicist@hotmail.com]
+For commercial or alternative licensing inquiries, contact: [speakingpolitics@outlook.com]
 
 ---
 
