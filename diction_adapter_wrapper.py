@@ -19,8 +19,8 @@ class DictionAdapter:
     """
 
     # === INTEGRATED VERBATIM BLOCK ===
-    Supported Formal Proof AssistantsAssistant
-    Strengths for Integration
+    Supported Formal Proof Assistants
+    Assistant Strengths for Integration
     Proof Output Type
     Lean 4
     Excellent metaprogramming, mathlib, clean syntax
