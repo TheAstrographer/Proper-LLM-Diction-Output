@@ -15,7 +15,7 @@ except ImportError:
 
 class DictionAdapter:
     """
-    Activerly-Varying adapter for LLM diction enhancement.
+    Actively-Varying adapter for LLM diction enhancement.
     """
 
     # === INTEGRATED VERBATIM BLOCK ===
