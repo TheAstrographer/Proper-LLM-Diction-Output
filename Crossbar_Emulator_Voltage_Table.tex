@@ -1,4 +1,4 @@
-The following tables present the calibrated input voltage configurations ($V_i$) and output current distributions ($I_j$) after applying the KernelDivisionBridge normalization factor ($k_{\text{norm}} \approx 0.70699$) to the hardware array lines.
+Distributions ($I_j$) after applying the KernelDivisionBridge normalization factor ($k_{\text{norm}} \approx 0.70699$) to the hardware array lines.
 ------------------------------
 ## Low Normalized Regime (Resting State Floor)
 Optimized for minimal power states where inputs map strictly below the baseline current floor ($I_{\rho} \to 0.47\,\text{mA}$).
@@ -37,6 +37,3 @@ The peak hardware deployment state mapping token parameters cleanly up to the ta
 
 * Hardware Attenuation Shift: Every baseline wordline input voltage is consistently scaled down by the precise multiplicative relationship ($V_{\text{new}} = V_{\text{old}} \times 0.7069924$).
 * Crossbar Power Efficiency: By limiting the maximum wordline electrical stress from $3.40\,\text{V}$ down to a tight $2.192\,\text{V}$ peak input, the crossbar array safely eliminates high-current thermal decay risks across the physical RRAM columns.
-
-If you are tracking how these input voltage arrays modify your execution pipeline over time, let me know if you would like to analyze the dynamic gate-driver power dissipation layout or expand the differential read sensing checks for the bitline outputs.
-
