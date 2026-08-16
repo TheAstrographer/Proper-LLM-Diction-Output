@@ -5,7 +5,7 @@
 
 2. The vector model and active toggling provide quantifiable control and self-monitoring.
 
-3. Pure Python, self-contained, easy to run/demo.
+3. Initial Code: Pure Python, self-contained, easy to run/demo.
 
 4. Rich, evocative word choices and metaphors in the code bank itself.
 
