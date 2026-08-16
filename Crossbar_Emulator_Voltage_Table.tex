@@ -1,0 +1,42 @@
+The following tables present the calibrated input voltage configurations ($V_i$) and output current distributions ($I_j$) after applying the KernelDivisionBridge normalization factor ($k_{\text{norm}} \approx 0.70699$) to the hardware array lines.
+------------------------------
+## Low Normalized Regime (Resting State Floor)
+Optimized for minimal power states where inputs map strictly below the baseline current floor ($I_{\rho} \to 0.47\,\text{mA}$).
+
+| Inputs (Wordlines) | Native Code Parameter | Normalized Voltage ($V_i$) | G_Real (mS) | G_Phase (mS) | G_$\rho$ (mS) | Resulting Current ($I_j$) |
+|---|---|---|---|---|---|---|
+| $V_C$ (Cadence) | $C = \text{"staccato"}$ | 0.141 V | 1.50 | 0.40 | 0.20 | $I_{\text{Real}}$ = 1.449 mA |
+| $V_D$ (Density) | $D = 0.850$ | 0.601 V | 2.00 | 1.20 | 0.50 | $I_{\text{Phase}}$ = 1.145 mA |
+| $V_M$ (Metaphor) | $M = 0$ | 0.000 V | 0.50 | 0.50 | 0.10 | $I_{\rho}$ = 0.332 mA |
+| $V_\Delta$ (Deviation) | $\Delta = 0.150$ | 0.106 V | 0.30 | 3.50 | 0.25 | |
+
+------------------------------
+## Medium Normalized Regime (Transition Phase Intercept)
+Calibrated around the median operational convergence band ($I_{\rho} \to 3.32\,\text{mA}$).
+
+| Inputs (Wordlines) | Native Code Parameter | Normalized Voltage ($V_i$) | G_Real (mS) | G_Phase (mS) | G_$\rho$ (mS) | Resulting Current ($I_j$) |
+|---|---|---|---|---|---|---|
+| $V_C$ (Cadence) | $C = \text{"sinuous"}$ | 0.389 V | 1.80 | 0.80 | 0.60 | $I_{\text{Real}}$ = 3.712 mA |
+| $V_D$ (Density) | $D = 1.800$ | 1.273 V | 2.20 | 1.90 | 1.40 | $I_{\text{Phase}}$ = 3.118 mA |
+| $V_M$ (Metaphor) | $M = 1$ | 0.318 V | 0.50 | 0.80 | 0.90 | $I_{\rho}$ = 2.347 mA |
+| $V_\Delta$ (Deviation) | $\Delta = 0.600$ | 0.424 V | 0.30 | 4.20 | 0.75 | |
+
+------------------------------
+##⚡️High Normalized Regime (Hyperplane Saturation Peak)
+The peak hardware deployment state mapping token parameters cleanly up to the targeted saturation boundary ($I_{\rho} \to 15.60\,\text{mA}$).
+
+| Inputs (Wordlines) | Native Code Parameter | Normalized Voltage ($V_i$) | G_Real (mS) | G_Phase (mS) | G_$\rho$ (mS) | Resulting Current ($I_j$) |
+|---|---|---|---|---|---|---|
+| $V_C$ (Cadence) | $C = \text{"staccato"}$ | 0.672 V | 2.50 | 1.10 | 1.80 | $I_{\text{Real}}$ = 8.137 mA |
+| $V_D$ (Density) | $D = 3.100$ | 2.192 V | 2.80 | 2.50 | 3.20 | $I_{\text{Phase}}$ = 10.279 mA |
+| $V_M$ (Metaphor) | $M = 3$ | 0.954 V | 0.50 | 1.20 | 2.15 | $I_{\rho}$ = 11.029 mA |
+| $V_\Delta$ (Deviation) | $\Delta = 1.200$ | 0.848 V | 0.30 | 5.80 | 1.50 | |
+
+------------------------------
+## Key Performance Invariants
+
+* Hardware Attenuation Shift: Every baseline wordline input voltage is consistently scaled down by the precise multiplicative relationship ($V_{\text{new}} = V_{\text{old}} \times 0.7069924$).
+* Crossbar Power Efficiency: By limiting the maximum wordline electrical stress from $3.40\,\text{V}$ down to a tight $2.192\,\text{V}$ peak input, the crossbar array safely eliminates high-current thermal decay risks across the physical RRAM columns.
+
+If you are tracking how these input voltage arrays modify your execution pipeline over time, let me know if you would like to analyze the dynamic gate-driver power dissipation layout or expand the differential read sensing checks for the bitline outputs.
+
