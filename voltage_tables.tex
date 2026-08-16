@@ -1,0 +1,41 @@
+## 📊 Low Operating Regime (Resting State Array)
+This table maps input voltages and output column bitline currents when the system runs at base parameters ($D < 2.0, M = 0$).
+
+| Inputs (Wordlines) | Voltage ($V_i$) | G Column 0 (Real) | G Column 1 (Phase) | G Column 2 ($\rho$) | Resulting Current ($I_j$) |
+|---|---|---|---|---|---|
+| $V_C$ (Cadence) | 0.20 V | 1.50 mS | 0.40 mS | 0.20 mS | $I_{\text{Real}}$ = 2.05 mA |
+| $V_D$ (Density) | 0.85 V | 2.00 mS | 1.20 mS | 0.50 mS | $I_{\text{Phase}}$ = 1.62 mA |
+| $V_M$ (Metaphor) | 0.00 V | 0.50 mS | 0.50 mS | 0.10 mS | $I_\rho$ = 0.47 mA |
+| $V_\Delta$ (Deviation) | 0.15 V | 0.30 mS | 3.50 mS | 0.25 mS | |
+
+------------------------------
+## 📈 Medium Operating Regime (Transition Phase Array)
+This table maps voltages and currents as interaction coefficients begin driving intermediate parameter shifts ($2.0 \le D < 2.6, M = 1$).
+
+| Inputs (Wordlines) | Voltage ($V_i$) | G Column 0 (Real) | G Column 1 (Phase) | G Column 2 ($\rho$) | Resulting Current ($I_j$) |
+|---|---|---|---|---|---|
+| $V_C$ (Cadence) | 0.55 V | 1.80 mS | 0.80 mS | 0.60 mS | $I_{\text{Real}}$ = 5.25 mA |
+| $V_D$ (Density) | 1.80 V | 2.20 mS | 1.90 mS | 1.40 mS | $I_{\text{Phase}}$ = 4.41 mA |
+| $V_M$ (Metaphor) | 0.45 V | 0.50 mS | 0.80 mS | 0.90 mS | $I_\rho$ = 3.32 mA |
+| $V_\Delta$ (Deviation) | 0.60 V | 0.30 mS | 4.20 mS | 0.75 mS | |
+
+------------------------------
+## ✨ High Operating Regime (Hyperplane Saturation Array)
+This table maps the peak state where maximum density voltage inputs trigger immediate $M=3$ saturation ($D \ge 2.6, M = 3$).
+
+| Inputs (Wordlines) | Voltage ($V_i$) | G Column 0 (Real) | G Column 1 (Phase) | G Column 2 ($\rho$) | Resulting Current ($I_j$) |
+|---|---|---|---|---|---|
+| $V_C$ (Cadence) | 0.95 V | 2.50 mS | 1.10 mS | 1.80 mS | $I_{\text{Real}}$ = 11.51 mA |
+| $V_D$ (Density) | 3.10 V | 2.80 mS | 2.50 mS | 3.20 mS | $I_{\text{Phase}}$ = 14.54 mA |
+| $V_M$ (Metaphor) | 1.35 V | 0.50 mS | 1.20 mS | 2.15 mS | $I_\rho$ = 15.60 mA |
+| $V_\Delta$ (Deviation) | 1.20 V | 0.30 mS | 5.80 mS | 1.50 mS | |
+
+------------------------------
+## 🔎 VMM Execution Metrics
+
+* Total Wordlines: 4 dynamic rows.
+* Total Bitlines: 3 monitoring columns.
+* Maximum Row Voltage: 3.40 V safely.
+* Maximum Bitline Current: 18.50 mA limit.
+
+
