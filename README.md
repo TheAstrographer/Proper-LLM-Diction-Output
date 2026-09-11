@@ -12,3 +12,5 @@
 5. Negative space functional variation meets stochastic processes and vector analysis.
 
 ======================================
+https://zenodo.org/records/18798341
+https://doi.org/10.5281/zenodo.18798341
